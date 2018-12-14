@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link type="text/css" rel='stylesheet' href='index.css'></link>
+<body>
+<h1 align="center">
+    India, its population and Literacy rate!
+</h1>
+
+<h2 align="justify">
+    Summary:
+</h2>
+
+<p align="justify">
+    The Dataset consists of various statistics of India like the total population, the area in sq. km, male and female literacy rates, Number of districts, 
+    growth rate, sex ratio etc. The dataset is originally taken from Kaggle and it is in .csv format. To make all the data parsing easy the data has been 
+    converted to JSON format using python script. In the data, there are no missing values so I presume there is no need for data pre processing
+</p>
+
+<h3>
+    (i) population map:
+</h3>
+<p align="justify">
+    The population map is an Indian Map encoded based on the total population. The color encoding is chosen on the basis of the total population. The 
+    lightest color indication less population and darker the color more is the population. When we hover on the Indian map a label is shown which indicates 
+    the population of the corresponding state.
+
+</p>
+
+<h3>
+    (ii) Bar Charts:
+</h3>
+<p align="justify">
+    The bar charts are literacy charts where the upper bar chart indicates the female literacy rate of all the states and the lower chart indicates the 
+    male literacy rates of all the states. When we click on a state in the map then the corresponding states literacy rates is highlighted with a pink bar 
+    and all the default bars are teal and steelblue in color. 
+
+    Above the bar charts the values of female and male literacy rates are shown dynamically where clicking a state updates the corresponding literacy rates.
+</p>
+
+<h3>
+    How to use:
+</h3>
+
+<p>
+    The map initially is loaded with all the populations color encoded. when we click on a map the bar charts appear showing both the male and female 
+    literacy rates with only one bar highlighted in pink. Now, the charts don't dissappear and clicking the states changes the bar color. Now, bars 
+    disappear only when we reload the page.
+
+
+</p>
+
+
+<div id="info"><h1 id="name"></h1></div>
+<div id="container">
+    <div id="barChart"></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+<script src="datamaps.ind.js"></script> 
+<script type="text/javascript" src="datafile.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+#container{
+	float: left;
+	width:1200px;
+	height:1200px;
+}
+#barChart{
+	float: right;
+}
